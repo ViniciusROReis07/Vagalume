@@ -476,7 +476,7 @@ header{
 #titulo{
     height: inherit;
     width: 96%;
-    padding-top: 20px;
+    padding-top: 5px;
     box-sizing: border-box;  
     margin-left: auto;
     margin-right: auto;
@@ -498,7 +498,7 @@ main{
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
     box-sizing: border-box;
     z-index: 999;
     position: fixed;
@@ -559,12 +559,12 @@ main{
 }
 #btnDados-artista , #btnMusic-artista , #btnAlbuns-artista , #btnMusicTop-artista {
     height: 40px;
-    width: 23%;
+    width: 25%;
     background-color: green;
     margin-right: 5px;
     float: left;
     color: white;
-    font-size: 1.5em;
+    font-size: 0.5em;
     font-family: fantasy;
     padding-left: 2px;
     padding-right: 2px;
