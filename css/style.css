@@ -2,7 +2,7 @@ h1{
     color: #ffffff;
     text-align: center;
     font-size: 3.5em;
-    font-family: Fantasy;
+    font-family: verdana;
     font-weight: bolder;
     letter-spacing: 1.5px;
     
@@ -11,7 +11,7 @@ h2{
     color: #ffffff;
     text-align: center;
     font-size: 2.2em;
-    font-family: Fantasy;
+    font-family: verdana;
     font-weight: bolder;
     letter-spacing: 1.5px;
 }
@@ -19,7 +19,7 @@ h3{
     color: #ffffff;
     text-align: justify;
     font-size: 1.5em;
-    font-family: Fantasy;
+    font-family: verdana;
     font-weight: bolder;
     margin-bottom: 8px;
     letter-spacing: 1.5px;
@@ -29,7 +29,7 @@ h4{
     color: #ffffff;
     text-align: center;
     font-size: 1.3em;
-    font-family: Fantasy;
+    font-family: verdana;
     font-weight: bolder;
     letter-spacing: 1.5px;
 }
@@ -37,13 +37,13 @@ p{
     color: #ffffff;
     text-align: center;
     font-size: 1.1em;
-    font-family: Fantasy;
+     font-family: verdana;
 }
 a{
     color: #ffffff;
     text-align: center;
     font-size: 1.2em;
-    font-family: Fantasy;
+    font-family: verdana;
     font-weight: bolder;
     text-decoration: none;
 }
