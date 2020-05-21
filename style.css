@@ -1,0 +1,802 @@
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: Fantasy;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    
+}
+h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: Fantasy;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+h3{
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: Fantasy;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+    
+}
+h4{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Fantasy;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Fantasy;
+}
+a{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Fantasy;
+    font-weight: bolder;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+
+@media screen and (min-device-width:1200px){
+    
+header{
+    height: 100px;
+    width: 100vw;
+    background-color: #00251a;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+#titulo{
+    height: inherit;
+    width: 400px;
+    padding-top: 20px;
+    box-sizing: border-box;  
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    min-height: 1000px;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+    background-color: black;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+#entrada-dados{
+    height: 200px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+#resultados{
+    min-height: 700px;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+    padding-bottom: 20px;
+    box-sizing: border-box;  
+}
+#pesquisa input{
+    height: 40px;
+    width: 500px;
+    float: left;
+    margin-right: 5px;
+    border: #212121 solid 2px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #004d40;
+    font-size: 2.2em;
+    font-family: fantasy;
+}
+#botaoPesquisa input{
+    height: 55px;
+    width: 55px;
+    float: left;
+    border: black solid 5px;
+    border-radius: 50%;
+    background-color:  rgba(47,79,79,0.9);
+    background-image: url(lupa2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card{
+    min-height: inherit;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+    padding-left: 50px;
+    box-sizing: border-box;
+    
+}
+#card-filtro{
+    height: 80px;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#btnDados-artista , #btnMusic-artista , #btnAlbuns-artista , #btnMusicTop-artista {
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    margin-right: 5px;
+    float: left;
+    color: white;
+    font-size: 1.5em;
+    font-family: fantasy;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+#btnDados-artista:hover , #btnMusic-artista:hover , #btnAlbuns-artista:hover , #btnMusicTop-artista:hover{
+    background-color: black;
+    color: darkseagreen;
+}
+.card-artist{
+    height: 700px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #00251a;
+    margin-right: auto;
+    margin-left: auto;
+    perspective: 1000px;
+}
+.card-artist-flipper{
+    width: 400px;
+    height: 700px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-artist:hover .card-artist-flipper{
+    transform: rotateY(180deg);
+}
+.card-artist-front, .card-artist-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: black;
+}
+.card-artist-back{
+    transform: rotateY(180deg);
+    background-color: black;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.card-artist-front-img, .card-artist-front-img img{
+    width: 396px;
+    height: 620px;
+    border-radius: 10px;
+}
+.card-artist-front-titulo{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+.card-artist-img, .card-artist-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-artist-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-artist-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-artist-lista li{
+    height: 75px;
+    width: 100%;
+    box-shadow: 5px 5px 5px #00251a;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-music{
+    min-height: 700px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #00251a;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    float: left;
+    perspective: 1000px;
+}
+.card-music-flipper{
+    width: 400px;
+    height: 700px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-music:hover .card-music-flipper{
+    transform: rotateY(180deg);
+}
+.card-music-front, .card-music-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: darkseagreen;
+    
+}
+.card-music-back{
+    transform: rotateY(180deg);
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.card-music-front-img, .card-music-front-img img{
+    width: 396px;
+    height: 620px;
+    border-radius: 10px;
+}
+.card-music-front-titulo{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+.card-music-img, .card-music-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-music-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-music-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-music-lista li{
+    height: 115px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-album{
+    min-height: 700px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #363636;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    float: left;
+    perspective: 1000px;
+}
+.card-album-flipper{
+    width: 400px;
+    height: 700px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-album:hover .card-album-flipper{
+    transform: rotateY(180deg);
+}
+.card-album-front, .card-album-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: #363636;
+}
+.card-album-back{
+    transform: rotateY(180deg);
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.card-album-front-img, .card-album-front-img img{
+    width: 396px;
+    height: 620px;
+    border-radius: 10px;
+}
+.card-album-front-titulo{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box; 
+}
+.card-album-img, .card-album-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-album-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-album-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-album-lista li{
+    height: 125px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-musicTop{
+    min-height: 700px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #B8860B;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    float: left;
+    perspective: 1000px;
+}
+.card-musicTop-flipper{
+    width: 400px;
+    height: 700px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-musicTop:hover .card-musicTop-flipper{
+    transform: rotateY(180deg);
+}
+.card-musicTop-front, .card-musicTop-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border:#BDB76B solid 2px;
+      background-color: darkgoldenrod;
+}
+.card-musicTop-back{
+    transform: rotateY(180deg);
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.card-musicTop-front-img, .card-musicTop-front-img img{
+    width: 396px;
+    height: 620px;
+    border-radius: 10px;
+}
+.card-musicTop-front-titulo{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box; 
+}
+.card-musicTop-img, .card-musicTop-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-musicTop-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-musicTop-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-musicTop-lista li{
+    height: 205px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: #00251a;
+    padding-top: 15px;
+}
+}
+
+
+@media screen and (max-device-width:750px){
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #00251a;
+    padding-left: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    position: fixed;
+}
+#titulo{
+    height: inherit;
+    width: 96%;
+    padding-top: 20px;
+    box-sizing: border-box;  
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    min-height: 1000px;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    
+}
+#entrada-dados{
+    height: 100px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    z-index: 999;
+    position: fixed;
+    background-color: black;
+ 
+}
+#pesquisa input{
+    height: 40px;
+    width: 80%;
+    float: left;
+    margin-right: 5px;
+    border: #212121 solid 2px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #004d40;
+    font-size: 2.2em;
+    font-family: fantasy;
+}
+#botaoPesquisa input{
+    height: 55px;
+    width: 14%;
+    float: left;
+    border: black solid 5px;
+    border-radius: 100%;
+    background-color:  rgba(47,79,79,0.9);
+    background-image: url(lupa2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#resultados{
+    min-height: 700px;
+    height: auto;
+    overflow: hidden;
+    width: 94%;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    box-sizing: border-box;  
+}
+#card{
+    min-height: inherit;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    
+}
+#card-filtro{
+    height: 80px;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+#btnDados-artista , #btnMusic-artista , #btnAlbuns-artista , #btnMusicTop-artista {
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    margin-right: 5px;
+    float: left;
+    color: white;
+    font-size: 1.5em;
+    font-family: fantasy;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.card-artist{
+    height: 702px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #00251a;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+.card-artist-flipper{
+    width: 400px;
+    height: 700px;
+}
+.card-artist-front{
+    display: none;
+}    
+.card-artist-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: black;
+      background-color: black;
+      padding-top: 10px;
+      box-sizing: border-box;
+}
+.card-artist-img, .card-artist-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-artist-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-artist-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-artist-lista li{
+    height: 75px;
+    width: 100%;
+    box-shadow: 5px 5px 5px #00251a;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-music{
+    min-height: 702px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px darkseagreen;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+     
+}
+.card-music-flipper{
+    width: 400px;
+    height: 700px;
+}
+.card-music-front{
+  display: none;      
+}
+.card-music-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: darkseagreen;
+      padding-top: 10px;
+      box-sizing: border-box;
+    
+}
+.card-music-img, .card-music-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-music-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-music-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-music-lista li{
+    height: 115px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-album{
+    height: 702px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px #363636;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.card-album-flipper{
+    width: 400px;
+    height: 700px;
+}
+.card-album-front{
+    display: none;
+}  
+.card-album-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border: black solid 2px;
+      background-color: #363636;
+      padding-top: 10px;
+      box-sizing: border-box;
+}
+.card-album-img, .card-album-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-album-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-album-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-album-lista li{
+    height: 125px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.card-musicTop{
+    height: 702px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 8px darkgoldenrod;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.card-musicTop-flipper{
+    width: 400px;
+    height: 700px;
+}
+.card-musicTop-front{
+    display: none;
+}
+.card-musicTop-back{
+      position: absolute;
+      width: 398px;
+      height: 700px;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      border:#BDB76B solid 2px;
+      background-color: darkgoldenrod;
+      padding-top: 10px;
+      box-sizing: border-box;
+}
+.card-musicTop-img, .card-musicTop-img img{
+    height: 230px;
+    width: 320px;   
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+}
+.card-musicTop-dados{
+    height: 480px;
+    width: 100%;
+}
+.card-musicTop-lista{
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.card-musicTop-lista li{
+    height: 205px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: #00251a;
+    padding-top: 15px;
+}
+}
+

@@ -1,0 +1,92 @@
+.spinner{
+    width: 70px;
+    height: 70px;
+    border: 8px solid darkseagreen;
+    border-top-color: green;
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+}
+.spinner>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+   
+}
+.spinner-dual{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid transparent;
+    border-top-color: green;
+    border-bottom-color: green;
+    border-radius: 100%;
+    animation: spin 1.8s linear infinite;
+}
+.spinner-dual>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: spin 1s reverse linear infinite;
+}
+.spinner-fast{
+    width: 70px;
+    height: 70px;
+    border-top: 6px solid green;
+    border-right: 6px solid transparent;
+    border-radius: 100%;
+    animation: spin 1.3s linear infinite;
+}
+.spinner-fast>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: spin 4s  linear infinite;
+}
+
+.spinner-triple{
+    width: 30px;
+    height: 30px;
+    border: 5px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-color: green;
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+}
+.spinner-triple>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: spin 1s  linear infinite;
+}
+.spinner-triple::before{
+    content: "";
+    border: 4px solid transparent;
+    border-top-color: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    animation: spin 4s linear infinite;
+}
+.spinner-triple::after{
+    content: "";
+    border: 3px solid transparent;
+    border-top-color: darkseagreen;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg)
+    }
+}
