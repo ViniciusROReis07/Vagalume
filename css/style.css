@@ -147,7 +147,7 @@ main{
     float: left;
     color: white;
     font-size: 1.5em;
-    font-family: fantasy;
+    font-family: verdana;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 3px;
@@ -507,7 +507,7 @@ main{
 }
 #pesquisa input{
     height: 40px;
-    width: 75%;
+    width: 60%;
     float: left;
     margin-right: 5px;
     border: #212121 solid 2px;
@@ -518,7 +518,7 @@ main{
 }
 #botaoPesquisa input{
     height: 55px;
-    width: 15%;
+    width: 20%;
     float: left;
     border: black solid 5px;
     border-radius: 100%;
@@ -565,7 +565,7 @@ main{
     float: left;
     color: white;
     font-size: 0.5em;
-    font-family: fantasy;
+    font-family: verdana;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 3px;
