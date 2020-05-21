@@ -546,7 +546,7 @@ main{
 }
 #card-filtro{
     height: 80px;
-    width: 430px;
+    width: 93%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -558,7 +558,7 @@ main{
 }
 #btnDados-artista , #btnMusic-artista , #btnAlbuns-artista , #btnMusicTop-artista {
     height: 40px;
-    width: 100px;
+    width: 93%;
     background-color: green;
     margin-right: 5px;
     float: left;
@@ -573,7 +573,7 @@ main{
 }
 .card-artist{
     height: 702px;
-    width: 400px;
+    width: 93%;
     border-radius: 10px;
     box-shadow: 10px 8px 8px #00251a;
     margin-right: auto;
@@ -581,7 +581,7 @@ main{
    
 }
 .card-artist-flipper{
-    width: 400px;
+    width: 93%;
     height: 700px;
 }
 .card-artist-front{
@@ -589,7 +589,7 @@ main{
 }    
 .card-artist-back{
       position: absolute;
-      width: 398px;
+      width: 93%;
       height: 700px;
       border-radius: 15px;
       border: black solid 2px;
@@ -600,7 +600,7 @@ main{
 }
 .card-artist-img, .card-artist-img img{
     height: 230px;
-    width: 320px;   
+    width: 93%;   
     margin-left: auto;
     margin-right: auto;
     box-shadow: 8px 8px 8px black;
@@ -628,7 +628,7 @@ main{
 }
 .card-music{
     min-height: 702px;
-    width: 400px;
+    width: 93%;
     border-radius: 10px;
     box-shadow: 10px 8px 8px darkseagreen;
     margin-right: auto;
@@ -637,7 +637,7 @@ main{
      
 }
 .card-music-flipper{
-    width: 400px;
+    width: 93%;
     height: 700px;
 }
 .card-music-front{
@@ -645,7 +645,7 @@ main{
 }
 .card-music-back{
       position: absolute;
-      width: 398px;
+      width: 93%;  
       height: 700px;
       border-radius: 15px;
       border: black solid 2px;
@@ -656,7 +656,7 @@ main{
 }
 .card-music-img, .card-music-img img{
     height: 230px;
-    width: 320px;   
+    width: 93%;  
     margin-left: auto;
     margin-right: auto;
     box-shadow: 8px 8px 8px black;
@@ -684,7 +684,7 @@ main{
 }
 .card-album{
     height: 702px;
-    width: 400px;
+     width: 93%;
     border-radius: 10px;
     box-shadow: 10px 8px 8px #363636;
     margin-right: auto;
@@ -692,7 +692,7 @@ main{
     margin-bottom: 30px;
 }
 .card-album-flipper{
-    width: 400px;
+    width: 93%;
     height: 700px;
 }
 .card-album-front{
@@ -700,7 +700,7 @@ main{
 }  
 .card-album-back{
       position: absolute;
-      width: 398px;
+      width: 93%;
       height: 700px;
       backface-visibility: hidden;
       border-radius: 15px;
@@ -711,7 +711,7 @@ main{
 }
 .card-album-img, .card-album-img img{
     height: 230px;
-    width: 320px;   
+    width: 93%;   
     margin-left: auto;
     margin-right: auto;
     box-shadow: 8px 8px 8px black;
@@ -739,7 +739,7 @@ main{
 }
 .card-musicTop{
     height: 702px;
-    width: 400px;
+    width: 93%;
     border-radius: 10px;
     box-shadow: 10px 8px 8px darkgoldenrod;
     margin-right: auto;
@@ -755,7 +755,7 @@ main{
 }
 .card-musicTop-back{
       position: absolute;
-      width: 398px;
+      width: 93%;
       height: 700px;
       backface-visibility: hidden;
       border-radius: 15px;
@@ -766,7 +766,7 @@ main{
 }
 .card-musicTop-img, .card-musicTop-img img{
     height: 230px;
-    width: 320px;   
+    width: 93%;;   
     margin-left: auto;
     margin-right: auto;
     box-shadow: 8px 8px 8px black;
