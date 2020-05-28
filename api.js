@@ -444,7 +444,7 @@ const exibirCard = async () => {
 
 const validInput = ( $el ) => {
     let aux=$el.value;
-    aux = aux.replace(/[ç `´ ~ ; . , À Å Ã Ä Ɓ Ƀ Ƈ Č Ç Ɗ Ð É Ê Ƒ ƒ Ɠ ɦ Ħ İ Ŧ Ɨ Ƙ Ǩ Ł N̈ Ñ Ŋ Ɲ Ö Ø Ɵ Ƥ Ɽ Š Ş Ţ Ƭ Ʈ Ü Ų Ʉ Ⱳ Ƴ Ž Ȥ  â ã é  ê]/, ' ');
+    aux = aux.replace(/[^A-Za-z0-9]/, '');
     $el.value=aux;
 }
 

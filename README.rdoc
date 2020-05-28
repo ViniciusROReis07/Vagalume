@@ -2,7 +2,7 @@
 
 
 
-Este projeto teve como objetivo fixar os aprendizados em relação ao consumo de APIs.
+Este projeto da aula de PWFE do SENAI teve como objetivo fixar os aprendizados em relação ao consumo de APIs.
 
 1-Competências.
 
